@@ -8,9 +8,47 @@
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <canvas id="wave" width="4000" height="35" style="border: 1px solid #eee; display: none;"></canvas>
+    <div class="screen screen-show main-menu">
+        <div class="container">
+            <ul class="main-menu-list">
+                <li>Continue</li>
+                <li>New Game</li>
+                <li>Orders</li>
+                <li>Options</li>
+            </ul>
+        </div>
+    </div>
+    <div class="screen options">
+        <h1>Options</h1>
+
+    </div>
+    <div class="screen loading">
+        <h1>Loading</h1>
+
+    </div>
+    <div class="screen orders">
+        <h1>Orders</h1>
+
+    </div>
+    <div class="screen equipment">
+        <h1>Equipment</h1>
+
+    </div>
+    <div class="screen game">
+        <h1>Game</h1>
+
+    </div>
+    <div class="screen result">
+        <h1>Result</h1>
+
+    </div>
 </body>
 
 </html>
