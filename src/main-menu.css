@@ -20,7 +20,7 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47); 
     width: 65rem;
     padding-block: 0.656rem;
-   
+    user-select: none;
     background-position: left -75px center;
     mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
 }
