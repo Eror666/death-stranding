@@ -22,21 +22,23 @@
     padding-block: 0.656rem;
     user-select: none;
     background-position: left -75px center;
+    background-position: left -75px center, left -75px center;
     mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
 }
 .main-menu-list li:hover{
     color: rgba(255, 255, 255, 0.87); 
     cursor: pointer;
-    background-image: url('assets/wave.png');
+    background-image: url('assets/wave.png'), url('assets/wave2.png');
     animation: wave 40s infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
 @keyframes wave{
     from{
-        background-position-x: -75px;
+        background-position-x: -75px, -190px;
     }
     to{
-        background-position-x: -2000px;
+        background-position-x: -2000px, -2500px;
     }
 }
