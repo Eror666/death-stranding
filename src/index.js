@@ -14,18 +14,33 @@ import './main-menu.css'
 
 // for (let i = 0; i < 2400; i++) {
 //     ctx.beginPath()
-//     ctx.arc(2.5 * i, (Math.sin(i / 27) * 5.5) + 17.5, clamp(+positiveSin(i / 25) * 2.5, 1, 5), 2 * Math.PI, false)
-    
-//     ctx.fillStyle = `rgba(99, ${120 + +Math.round(positiveSin(i / 17) * 30)}, 225, ${clamp(+positiveSin((i + 20) / 25).toFixed(2), 0.4, 0.8)})`
+//     const radius = clamp(+positiveSin(i / 18) * 1.5, 0.6, 1)
+//     // const radius = 1.2
+//     const x = 2 * i
+//     const y = (Math.sin(i / 30) * 6) + 17.5
+//     ctx.arc(x, y, radius, 2 * Math.PI, false)
+// // rgb(75, 125, 158)
+//     const green = 130 + +Math.round(positiveSin(i / 18) * 50) 
+//     // const green = 170
+//     const opacity = clamp(+positiveSin((i + 20) / 15).toFixed(2), 0.4, 1)
+//     ctx.fillStyle = `rgba(75, ${green}, 255, ${opacity})`
+
 //     ctx.fill()
 // }
 
-// for (let i = 0; i < 1400; i++) {
-//     ctx.beginPath()
-//     ctx.arc(3 * (i + 25), (Math.sin(i / 20) * 5.5) + 17.5, 2, 2 * Math.PI, false)
-//     console.log(+positiveSin(i / 16).toFixed(2), clamp(+positiveSin(i / 16).toFixed(2), 0, 1))
-//     ctx.fillStyle = `rgba(99, 224, 225, ${clamp(+positiveSin((i + 20) / 20).toFixed(2), 0.05, 0.8)})`
-//     ctx.fill()
-// }
+// for (let i = 0; i < 2400; i++) {
+//   ctx.beginPath()
+//   const radius = clamp(+positiveSin(i / 18) * 1.5, 0.9, 1)
+//   // const radius = 1.2
+//   const x = 2 * (i + 30)
+//   const y = (Math.sin(i / 30) * 6) + 17.5
+//   ctx.arc(x, y, radius, 2 * Math.PI, false)
+// // rgb(75, 125, 158)
+//   const green = 130 + +Math.round(positiveSin(i / 18) * 100) 
+//   // const green = 170
+//   const opacity = clamp(+positiveSin((i + 20) / 15).toFixed(2), 0.6, 1)
+//   ctx.fillStyle = `rgba(75, ${green}, 255, ${opacity})`
 
+//   ctx.fill()
+// }
 

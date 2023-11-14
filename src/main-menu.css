@@ -8,7 +8,7 @@
     align-items: flex-end;
 }
 .main-menu-list{
-    padding-bottom: 16.3rem;
+    padding-bottom: 15.2rem;
     text-align: center;
 }
 .main-menu-list li {
@@ -29,15 +29,15 @@
     color: rgba(255, 255, 255, 0.87); 
     cursor: pointer;
     background-image: url('assets/wave.png'), url('assets/wave2.png');
-    animation: wave 40s infinite;
+    animation: wave 50s infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
 @keyframes wave{
     from{
-        background-position-x: -75px, -190px;
+        background-position-x: -2000px, -2500px;
     }
     to{
-        background-position-x: -2000px, -2500px;
+        background-position-x: -75px, -190px;
     }
 }
