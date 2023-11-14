@@ -21,17 +21,17 @@ import './options.css'
 //     const y = (Math.sin(i / 30) * 6) + 17.5
 //     ctx.arc(x, y, radius, 2 * Math.PI, false)
 // // rgb(75, 125, 158)
-<<<<<<< HEAD
+
 //     const green = 130 + +Math.round(positiveSin(i / 18) * 50)
-=======
-//     const green = 130 + +Math.round(positiveSin(i / 18) * 50) 
->>>>>>> e8e14d86d2db7633d05012d3ffa403054d5ebbd1
+
+//     const green = 130 + +Math.round(positiveSin(i / 18) * 50)
+
 //     // const green = 170
 //     const opacity = clamp(+positiveSin((i + 20) / 15).toFixed(2), 0.4, 1)
 //     ctx.fillStyle = `rgba(75, ${green}, 255, ${opacity})`
 
 //     ctx.fill()
-<<<<<<< HEAD
+
 // }
 
 // for (let i = 0; i < 2400; i++) {
@@ -49,7 +49,7 @@ import './options.css'
 
 //   ctx.fill()
 // }
-=======
+
 // }
 
 // for (let i = 0; i < 2400; i++) {
@@ -60,7 +60,7 @@ import './options.css'
 //   const y = (Math.sin(i / 30) * 6) + 17.5
 //   ctx.arc(x, y, radius, 2 * Math.PI, false)
 // // rgb(75, 125, 158)
-//   const green = 130 + +Math.round(positiveSin(i / 18) * 100) 
+//   const green = 130 + +Math.round(positiveSin(i / 18) * 100)
 //   // const green = 170
 //   const opacity = clamp(+positiveSin((i + 20) / 15).toFixed(2), 0.6, 1)
 //   ctx.fillStyle = `rgba(75, ${green}, 255, ${opacity})`
@@ -68,4 +68,4 @@ import './options.css'
 //   ctx.fill()
 // }
 
->>>>>>> e8e14d86d2db7633d05012d3ffa403054d5ebbd1
+
