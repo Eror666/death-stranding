@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: 'bundle[hash].js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true
+        clean: true,
     },
     devServer: {
         static: './dist'
@@ -20,6 +20,10 @@ module.exports = {
     ],
     module: {
         rules: [
+            {
+                test: /\.html$/,
+                use: 'html-loader'
+            },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
