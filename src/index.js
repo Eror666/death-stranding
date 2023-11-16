@@ -68,4 +68,8 @@ import './options.css'
 //   ctx.fill()
 // }
 
+const $optionsButton = document.querySelector('.options-button')
+const $optionsSection = document.querySelector('.options')
+$optionsButton.addEventListener('click', () => $optionsSection.classList.add('screen-show'))
+console.log($optionsButton)
 

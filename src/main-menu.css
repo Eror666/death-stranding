@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
 }
 .main-menu-list{
     padding-bottom: 15.2rem;
@@ -26,6 +27,8 @@
     mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
 }
+
+
 .main-menu-list li:hover{
     color: rgba(255, 255, 255, 0.87); 
     cursor: pointer;
