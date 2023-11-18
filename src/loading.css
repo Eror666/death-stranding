@@ -1,0 +1,30 @@
+.loading .container{
+    height: 100vh;
+}
+
+.loading-percent {
+    font-family: 'Tektur', sans-serif;
+    color: #C4F0EF;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.progress-bar {
+
+    
+}
+.progress-bar-border {
+    display: block;
+    width: 0.625rem;
+    height: 0.312rem;
+    background-color: #CAFCFD;
+
+}
+.progress-bar-border-left-top {
+}
+.progress-bar-border-left-bottom {
+}
+.progress-bar-border-right-top {
+}
+.progress-bar-border-right-bottom {
+}

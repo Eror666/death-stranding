@@ -1,6 +1,8 @@
 import './index.css'
 import './main-menu.css'
 import './options.css'
+import './loading.css'
+import './options'
 // const canvas = document.querySelector('#wave')
 // const ctx = canvas.getContext("2d")
 // const clamp = function (number, min, max) {
@@ -70,6 +72,5 @@ import './options.css'
 
 const $optionsButton = document.querySelector('.options-button')
 const $optionsSection = document.querySelector('.options')
-$optionsButton.addEventListener('click', () => $optionsSection.classList.add('screen-show'))
-console.log($optionsButton)
+$optionsButton.addEventListener('click', () => $optionsSection.classList.add('screen-show', 'open'))
 

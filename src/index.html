@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <%= htmlWebpackPlugin.options.title %> -->
     <title>
-        <%= htmlWebpackPlugin.options.title %>
+        Death Stranding
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Tektur&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,32 +19,70 @@
     <div class="screen screen-show main-menu">
         <div class="container">
             <ul class="main-menu-list">
-                <li><button>Continue</button></li>
-                <li><button>New Game</button></li>
-                <li><button>Orders</button></li>
-                <li><button class="options-button">Options</button></li>
+                <li>Continue</li>
+                <li>New Game</li>
+                <li>Orders</li>
+                <li class="options-button">Options</li>
             </ul>
         </div>
     </div>
     <div class="screen options">
         <div class="container">
-            <img src="assets/options-title.png" alt="Options title">
-            <ul class="options-list">
-                <li>Game Settings <span>Adjust gameplay settings</span></li>
-                <li>Controls(Controller)<span>Adjust gameplay settings</span></li>
-                <li>Controls(Keyboard & Mouse)<span>Adjust gameplay settings</span></li>
-                <li>Key Assignment<span>Adjust gameplay settings</span></li>
-                <li>HUD Settings<span>Adjust gameplay settings</span></li>
-                <li>Language Settings<span>Adjust gameplay settings</span></li>
-                <li>Graphic Settings<span>Adjust gameplay settings</span></li>
-                <li>Screen Brightness<span>Adjust gameplay settings</span></li>
-                <li>Audio Settings<span>Adjust gameplay settings</span></li>
-            </ul>
+            <img class="options-title" src="assets/options-title.png" alt="Options">
+            <div class="inner-container">
+                <div class="markers markers-top"></div>
+                <ul class="options-list">
+                    <li>
+                        <div class="option-title">Game Settings</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Controls(Controller)</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Controls(Keyboard & Mouse)</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Key Assignment</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">HUD Settings</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Language Settings</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Graphic Settings</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Screen Brightness</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                    <li>
+                        <div class="option-title">Audio Settings</div>
+                        <div class="option-description">Adjust gameplay settings</div>
+                    </li>
+                </ul>
+                <div class="markers markers-bottom"></div>
+            </div>
         </div>
     </div>
     <div class="screen loading">
-        <h1>Loading</h1>
-
+        <div class="container">
+            <span class="loading-percent">23%</span>
+            <div class="progress-bar">
+                <span class="progress-bar-border progress-bar-border-left-top"></span>
+                <span class="progress-bar-border progress-bar-border-left-bottom"></span>
+                <span class="progress-bar-border progress-bar-border-right-top"></span>
+                <span class="progress-bar-border progress-bar-border-right-bottom"></span>
+            </div>
+        </div>
     </div>
     <div class="screen orders">
         <h1>Orders</h1>

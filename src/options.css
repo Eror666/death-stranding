@@ -1,112 +1,230 @@
-.options .container{
+.options{
     padding-left: 11.375rem;
     padding-top: 5.812rem;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
+    z-index: 10;
     position: absolute;
-    top: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    user-select: none;
+    inset: 0;
 }
 .options-list{
-    margin-top: 31px;
+    margin-top: 0.312rem;
+    list-style: none;
+    margin-left: 0.78rem;
+    margin-bottom: 0.312rem;
 }
 .options-list li{
     max-width: 37.5rem;
-    list-style: none;
     position: relative;
     font-weight: 400;
     font-size: 26px;
-    padding: 10px 0px 29px 21px;
-    margin-top: 4px;
-    z-index: 2;
+    padding: 14px 0px 7px 21px;
     cursor: pointer;
-    
 }
-
-.options-list li:hover::after{
+.options-list li::after{
     content: "";
+    transform: scaleX(0) scaleY(0.05);
     position: absolute;
-    top: 0;
+    background-image:url('assets/options-parameter-bg.png');
+    top: 4px;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
-    color: #BEF4F5; 
-    animation: li-bg 2.5s infinite;
-    animation-delay: 0.1s;
+    color: #BEF4F5;   
 }
 
-@keyframes li-bg{
+.options-list li:hover::after{
+    animation: option-element-hover 0.15s;
+    animation-fill-mode: forwards;
+}
+.options-list li.mouse-leave::after{
+    animation: fade 1s;
+}
+@keyframes fade{
     from{
-        background-image:url('assets/options-parameter-bg.png');
+        opacity: 1;
+        transform: scaleX(1) scaleY(1);
+    }
+    to{
+        opacity: 0;
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes option-element-hover{
+    0%{
+        opacity: 0.4;
+        transform: scaleX(0) scaleY(0.05);
+    }
+    90%{
+        opacity: 1;
+        transform: scaleX(1) scaleY(0.05);
+    }
+    100%{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes option-element-blinking{
+    from{
         opacity: 1;
     }
     to{
-        background-image:url('assets/options-parameter-bg.png');
-        opacity: 0.5;
+        opacity: 0.4;
     }
+}
+.options-list li .option-description{
+    font-size: 16px;
+    opacity: 0;
+}
+.options-list li:hover .option-description{
+    opacity: 1;
 }
 
-.options-list li:first-child{
-    margin-top: 0px;
+.markers{
+    position: relative;
+    width: 39rem;
+    height: 0.312rem;
 }
-.options-list li span{
-    font-size: 16px;
-    display: none;
+.markers-top{
+    margin-top: 1.437rem;
 }
-.options-list li:hover span{
-    display: block;
-    
-}
-.options-list li:hover span::before{
-    content: "";
-    display: inline-block;
+.markers::before, .markers::after{
+    content: '';
     position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 1px;
-    background-color: #64e7d9;
-    animation: separate 0.1s;
-    opacity: 20%;
-   
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 0.625rem;
+    height: 0.312rem;
+    background-color: #CAFCFD;
 }
-@keyframes separate{
-    0%{
-        width: 0;
-        opacity: 100%;
-        height: 3px;
+.markers::before{
+    left: 0;
+}
+.markers::after{
+    right: calc(100% - 0.625rem);
+}
+.options .inner-container{
+    position: relative;
+}
+
+.markers-bottom{
+    position: absolute;
+    top: 1.25rem;
+}
+.options-list li .option-title{
+    opacity: 0;
+    transform: rotateX(60deg);
+    transform-origin: bottom center;
+}
+
+
+.options-list{
+    perspective: 60000px;
+    transform-style: preserve-3d;
+}
+
+.options-title{
+    opacity: 0;
+}
+.options.open .options-title{
+    animation: appear var(--options-title-time);
+    animation-fill-mode: forwards;
+}
+.options.open .markers::after{
+    animation: marker-to-right var(--markers-to-right-time) ;
+    animation-fill-mode: forwards;
+}
+.options.open .markers-bottom{
+    animation: marker-to-bottom var(--markers-to-bottom-time);
+    animation-delay: var(--markers-to-bottom-delay);
+    animation-fill-mode: forwards;
+}
+@keyframes options-element-appear {
+    from{
+        opacity: 0;
+        transform: rotateX(90deg);
     }
-    10%{
-        width: 60px;
-        opacity: 100%;
-        height: 3px;
+    to{
+        opacity: 1;
+        transform: rotateX(0deg);
     }
-    20%{
-        width: 120px;
-        opacity: 100%;
-        height: 3px;
+}
+@keyframes marker-to-bottom {
+    from{
+        top: 1.25rem;
     }
-    40%{
-        width: 240px;
-        opacity: 100%;
-        height: 3px;
+    to{
+        top: calc(100% -  0.312rem)
     }
-    80%{
-        width: 480px;
-        opacity: 100%;
-        height: 3px;
+}
+@keyframes marker-to-right{
+    from{
+        right: calc(100% - 0.625rem);
     }
-    100%{
-        width: 600px;
-        height: 1px;
+    to{
+        right: 0;
     }
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.options{
+    --options-title-time: 0.1s;
+    --markers-to-right-time: 0.1s;
+    --markers-to-bottom-time: 0.3s;
+    --markers-to-bottom-delay: var(--markers-to-right-time);
+
+    --option-element-coef: 1;
+    --option-element-time: 0.7s;
+    --option-element-delay: calc(var(--markers-to-right-time) - 0.5s);
+    --option-element-delay-1:calc(var(--option-element-delay) + 0.1s * var(--option-element-coef));
+    --option-element-delay-2:calc(var(--option-element-delay) + 0.2s * var(--option-element-coef));
+    --option-element-delay-3:calc(var(--option-element-delay) + 0.3s * var(--option-element-coef));
+    --option-element-delay-4:calc(var(--option-element-delay) + 0.4s * var(--option-element-coef));
+    --option-element-delay-5:calc(var(--option-element-delay) + 0.5s * var(--option-element-coef));
+    --option-element-delay-6:calc(var(--option-element-delay) + 0.6s * var(--option-element-coef));
+    --option-element-delay-7:calc(var(--option-element-delay) + 0.7s * var(--option-element-coef));
+    --option-element-delay-8:calc(var(--option-element-delay) + 0.8s * var(--option-element-coef));
+    --option-element-delay-9:calc(var(--option-element-delay) + 0.9s * var(--option-element-coef));
     
 }
-.options-list li:hover{
-    padding-bottom: 7px;
+.options.open .options-list li .option-title{   
+    animation: options-element-appear var(--option-element-time);
+    animation-fill-mode: forwards;
+    
+}
+.options.open .options-list li:nth-child(1) .option-title{
+    animation-delay: var(--option-element-delay-1);
+}
+.options.open .options-list li:nth-child(2) .option-title{
+    animation-delay: var(--option-element-delay-2);
+}
+.options.open .options-list li:nth-child(3) .option-title{
+    animation-delay: var(--option-element-delay-3);
+}
+.options.open .options-list li:nth-child(4) .option-title{
+    animation-delay: var(--option-element-delay-3);
+}
+.options.open .options-list li:nth-child(5) .option-title{
+    animation-delay: var(--option-element-delay-4);
+}
+.options.open .options-list li:nth-child(6) .option-title{
+    animation-delay: var(--option-element-delay-5);
+}
+.options.open .options-list li:nth-child(7) .option-title{
+    animation-delay: var(--option-element-delay-4);
+}
+.options.open .options-list li:nth-child(8) .option-title{
+    animation-delay: var(--option-element-delay-7);
+}
+.options.open .options-list li:nth-child(9) .option-title{
+    animation-delay: var(--option-element-delay-6);
 }
