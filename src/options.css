@@ -39,7 +39,10 @@
     animation-fill-mode: forwards;
 }
 .options-list li.mouse-leave::after{
-    animation: fade 1s;
+    animation: fade 0.3s;
+}
+.options-list li.mouse-leave .option-description{
+    animation: fade 0.2s;
 }
 @keyframes fade{
     from{
