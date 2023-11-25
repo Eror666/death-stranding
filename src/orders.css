@@ -1,0 +1,28 @@
+.orders{
+    height: 100vh;
+    background-color: #000;
+}
+.orders .container{
+    height: 100%;
+    padding: 9.44rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.38rem;
+}
+.orders .orders-top {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.orders-left, .orders-right {
+    width: 46.5rem;
+    box-shadow: 0 0 0 3px green;
+}
+.orders-right {
+}
+.orders-bottom {
+    display: flex;
+    gap: 1rem;
+    box-shadow: 0 0 0 3px green;
+}

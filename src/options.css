@@ -82,15 +82,15 @@
     opacity: 1;
 }
 
-.markers{
+.options .markers{
     position: relative;
     width: 39rem;
     height: 0.312rem;
 }
-.markers-top{
+.options .markers-top{
     margin-top: 1.437rem;
 }
-.markers::before, .markers::after{
+.options .markers::before, .markers::after{
     content: '';
     position: absolute;
     top: 0;
@@ -100,17 +100,17 @@
     height: 0.312rem;
     background-color: #CAFCFD;
 }
-.markers::before{
+.options .markers::before{
     left: 0;
 }
-.markers::after{
+.options .markers::after{
     right: calc(100% - 0.625rem);
 }
 .options .inner-container{
     position: relative;
 }
 
-.markers-bottom{
+.options .markers-bottom{
     position: absolute;
     top: 1.25rem;
 }

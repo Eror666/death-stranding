@@ -16,7 +16,7 @@
 
 <body>
     <canvas id="wave" width="4000" height="35" style="position: fixed; top: 62.5%; display: none"></canvas>
-    <div class="screen screen-show main-menu">
+    <div class="screen main-menu">
         <div class="container">
             <ul class="main-menu-list">
                 <li>Continue</li>
@@ -75,18 +75,72 @@
     </div>
     <div class="screen loading">
         <div class="container">
-            <span class="loading-percent">23%</span>
-            <div class="progress-bar">
-                <span class="progress-bar-border progress-bar-border-left-top"></span>
-                <span class="progress-bar-border progress-bar-border-left-bottom"></span>
-                <span class="progress-bar-border progress-bar-border-right-top"></span>
-                <span class="progress-bar-border progress-bar-border-right-bottom"></span>
+            <div class="inner-container">
+                <div class="markers markers-top"></div>
+                <div class="progress-bar"></div>
+                <div class="markers markers-bottom"></div>
+                <div class="loading-percent">23%</div>
             </div>
+            <img class="loading-star" src="./assets/loading-star.png" alt="loading">
         </div>
     </div>
-    <div class="screen orders">
-        <h1>Orders</h1>
-
+    <div class="screen screen-show orders">
+        <div class="container">
+            <div class="orders-top">
+                <div class="orders-left">1</div>
+                <div class="orders-right">1</div>
+            </div>
+            <div class="orders-bottom">
+                <div class="col-1">
+                    <div class="bar">
+                        <div class="icon"></div>
+                        <div class="amount">1000/1000ml</div>
+                    </div>
+                    <div class="bar">
+                        <div class="icon"></div>
+                        <div class="amount"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="bar">
+                        <div class="icon"></div>
+                        <div class="amount"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="icon"></div>
+                        <div class="amount"></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="number">
+                        <div class="icon icon-transparent"></div>
+                        <div class="amount">
+                            <span class="zeros">00</span>0.8kg
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="icon"></div>
+                        <div class="amount">
+                            0.8kg
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="number">
+                        <div class="icon"></div>
+                        <div class="amount">
+                            0.8kg
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="icon"></div>
+                        <div class="amount">
+                            0.8kg
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="screen equipment">
         <h1>Equipment</h1>

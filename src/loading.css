@@ -1,30 +1,94 @@
-.loading .container{
+.loading{
     height: 100vh;
+    background-color: #000;
+    position: relative;
 }
 
+.loading .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5.62rem;
+    
+}
 .loading-percent {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 0.56rem);
+    transform: translateY(-50%);
     font-family: 'Tektur', sans-serif;
-    color: #C4F0EF;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
+    color: #C4F0EF;
 }
 .progress-bar {
-
-    
+    width: 40%;
+    height: 0.5rem;
+    background-color: #99BFC2;
 }
-.progress-bar-border {
-    display: block;
-    width: 0.625rem;
+
+.loading .markers{
+    position: absolute;
+    left: 0;
+    right: 0;
     height: 0.312rem;
-    background-color: #CAFCFD;
+}
 
+.loading .markers::before, .markers::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.625rem;
+    background-color: #CAFCFD;
 }
-.progress-bar-border-left-top {
+.loading .markers::after{
+    right: 0;
 }
-.progress-bar-border-left-bottom {
+.loading .markers::before{
+    left: 0;
 }
-.progress-bar-border-right-top {
+.loading .inner-container{
+    position: relative;
+    padding: 1.125rem 1.437rem;
+    width: 40.375rem;
+    z-index: 10;
 }
-.progress-bar-border-right-bottom {
+.loading .inner-container::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url(./assets/wave.png), url(./assets/wave.png), url(./assets/wave.png), url(./assets/wave.png);
+    background-position: left 0px center, left -75px center,left -95px center,left -135px center;
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(to left, transparent 0%, white 30%, white 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, white 30%, white 70%, transparent 100%);
+    animation: loading-wave 150s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes loading-wave {
+    from{
+        background-position-x: -2000px, -2500px, -2100px, -2200px;
+    }
+    to{
+        background-position-x: -20px, -25px, -10px, -40px;
+    }
+}
+.loading .markers-top {
+    top: 0;
+}
+.loading .markers-bottom{
+    bottom: 0;
+}
+.loading .loading-star{
+    position: absolute;
+    right: 6.63rem;
+    bottom: 6rem;
+    width: 3.18rem;
+    height: 2.81rem;
 }

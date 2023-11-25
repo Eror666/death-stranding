@@ -2,6 +2,7 @@ import './index.css'
 import './main-menu.css'
 import './options.css'
 import './loading.css'
+import './orders.css'
 import './options'
 // const canvas = document.querySelector('#wave')
 // const ctx = canvas.getContext("2d")
