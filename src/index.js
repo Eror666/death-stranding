@@ -75,3 +75,19 @@ const $optionsButton = document.querySelector('.options-button')
 const $optionsSection = document.querySelector('.options')
 $optionsButton.addEventListener('click', () => $optionsSection.classList.add('screen-show', 'open'))
 
+const progressBar = document.querySelector('.loading .progress-bar')
+const loadingPercent = document.querySelector('.loading .loading-percent')
+let percent = 0
+let plus = true
+setInterval(() => {
+    if (plus) {
+        percent += 0.5
+    } else {
+        percent -= 2
+    }
+    progressBar.style.width = percent + '%'
+    loadingPercent.textContent = Math.round(percent) + '%'
+    if (percent >= 100 || percent <= 0) {
+        plus = !plus
+    }
+}, 10)
