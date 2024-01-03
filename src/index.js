@@ -4,6 +4,7 @@ import './options.css'
 import './loading.css'
 import './orders.css'
 import './options'
+import './tools.css'
 // const canvas = document.querySelector('#wave')
 // const ctx = canvas.getContext("2d")
 // const clamp = function (number, min, max) {

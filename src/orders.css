@@ -217,42 +217,42 @@
     letter-spacing: 0.01875rem;
 }
 
-.orders .map{
+.map{
     position: relative;
 }
 
-.orders .map-block {
+.map-block {
     flex: 1;
     aspect-ratio: 1/1;
 }
-.orders .map-row{
+.map-row{
     width: 100%;
     display: flex;
 } 
 
-.orders .plain {
+.map .plain {
     background-color: #252D16;
 }
 
-.orders .hills {
+.map .hills {
     background-color: #202714;
 }
-.orders .water {
+.map .water {
     background-color: #1D2932;
 }
-.orders .insurmountable {
+.map .insurmountable {
     background-color: #171918;
 }
-.orders .mountain {
+.map .mountain {
     background-color: #484A4A;
 }
-.orders .things {
+.map .things {
     background-color: #2F0D0D;
 }
-.orders .aim{
+.map .aim{
     position: absolute;
     right: 0;
 }
-.orders .player{
+.map .player{
     position: absolute;
 }
