@@ -1,53 +1,136 @@
 .tools {
     background-color: #000;
-    height: 100%;
+    padding-top: 8.25rem;
 }
+/* check how does container max-width works */
 .tools-main {
     display: flex;
+    justify-content: space-between;
+    gap: 2.69rem;
 }
 .tools-left {
+    width: 50%;
 }
+
 .tools-left-top {
 }
+.tools-items{
+    display: flex;
+    flex-wrap: wrap;
+}
 .tools-title {
+    display: inline-block;
+    background-color: #4C696C;
+    padding: 1.69rem 7.69rem 0.44rem 3.12rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: -0.0125rem;
 }
 .tool {
+    width: 11.875rem;
+    height: 10.75rem;
+    position: relative;
+    margin-top: 1.25rem;
 }
+.tool:hover{
+    background-color: rgba(0, 62, 90, 1);
+}
+.tool:hover .tool-content{
+    background-color: #009EE3;
+}
+.tool:not(:last-child){
+    margin-right: 2.19rem;
+}
+
 .tool-ladder {
 }
 .tool-content {
+    position: absolute;
+    width: 100%;
+    right: 0.62rem;
+    bottom: 0.44rem;
+    padding: 1rem;
 }
 .tool-title {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    letter-spacing: -0.00938rem;
 }
 .tool-numbers {
-}
-.tool-number1 {
-}
-.tool-number2 {
-}
-.tool-number3 {
-}
-.tool-anchor {
-}
-.tool-repair-spray {
-}
-.tool-blood-bag {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -0.01rem;
+    margin-left: 0.69rem;
 }
 .tools-left-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #182A31;
+    padding-top: 2px;
+    position: relative;
+}
+.tools-left-bottom::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.25rem;
+    left: -0.5rem;
+    width: 47.5625rem;
+    height: 0.125rem;
+    background-color: #182A31;
+}
+.tools-left-bottom::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 1.47rem;
+    left: 0;
+    width: 47.0625rem;
+    height: 0.125rem;
+    background-color: #182A31;
 }
 .tools-requirements {
+    margin: auto 0 0 0;
 }
-.requirements-text {
+.requirements-text{
+    font-size: 0.93rem;
+    font-weight: 300;
+    letter-spacing: -0.00938rem;
+}
+.requirements-text:last-child {
+    margin-top: 0.37rem;
 }
 .tools-resourse {
+    width: 5.875rem;
 }
+.tools-resourse:hover{
+    outline: 2px solid #5F6E6E;
+    background-color: rgba(42, 74, 79, 0.40);
+    backdrop-filter: blur(2px);
+    
+}
+
 .resourse-title {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    letter-spacing: -0.01625rem;
 }
 .resourse-numbers {
+    text-align: right;
+    font-size: 1.3125rem;
+    letter-spacing: -0.01313rem;
+    margin-top: 3.44rem;
+    line-height: 1.5rem;
 }
 .resourse-required {
+    color: #852229;
 }
 .resourse-available {
 }
 .tools-right {
+    width: 50%;
 }

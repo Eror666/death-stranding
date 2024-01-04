@@ -24,7 +24,7 @@
     flex-direction: column;
     font-weight: 300;
 }
-.orders-bottom {
+.orders-bottom, .player-stats {
     display: flex;
     gap: 1rem;
     margin-top: 3.38rem;
@@ -131,7 +131,7 @@
     margin-left: 0.25rem;
 }
 
-.orders-bottom .icon {
+.player-stats .icon {
     background-color: #D9D9D9;
     max-width: 1.93rem;
     max-height: 1.93rem;
@@ -140,10 +140,10 @@
     align-items: center;
     justify-content: center;
 }
-.orders-bottom .icon  img{
+.player-stats .icon  img{
     width: 100%;
 }
-.orders-bottom .icon-transparent{
+.player-stats .icon-transparent{
     opacity: 0;
 }
 
@@ -165,21 +165,21 @@
     width: 22.68rem;
     font-weight: 300;
 }
-.orders-bottom .bar, .orders-bottom .number{
+.player-stats .bar, .player-stats .number{
     display: flex;
     align-items: center;
 }
 
 
-.orders-bottom .col .bar:last-child, .orders-bottom .col .number:last-child{
+.player-stats .col .bar:last-child, .player-stats .col .number:last-child{
     margin-top: 0.56rem;
 }
-.orders-bottom .bar .amount{
+.player-stats .bar .amount{
     height: 1.93rem;
     width: 11.93rem;
     margin-left: 0.31rem;
 }
-.orders-bottom .health-bar .amount{
+.player-stats .health-bar .amount{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -189,29 +189,29 @@
     letter-spacing: 0.12rem;
     padding-right: 0.31rem;
 }
-.orders-bottom .stamina-bar .amount{
+.player-stats .stamina-bar .amount{
     background-color: #016DB5;
 }
-.orders-bottom .bb-bar .amount{
+.player-stats .bb-bar .amount{
     background-color: #E36F31;
 }
-.orders-bottom .shoes-bar .amount{
+.player-stats .shoes-bar .amount{
     background-color: #07A5BA;
 }
-.orders-bottom .number{
+.player-stats .number{
     font-size: 2.31rem;
     letter-spacing: 0.046rem;
 }
-.orders-bottom .number .zeros{
+.player-stats.number .zeros{
     color: #33485D;
     text-shadow: 0px 0px 5px #33485D;
 }
-.orders-bottom .number .amount{
+.player-stats .number .amount{
     color: #8CA8BE;
     line-height: 0.8;
     margin-left: 0.31rem;
 }
-.orders-bottom .number .kg{
+.player-stats .number .kg{
     color: #8CA8BE;
     font-size: 0.9375rem;
     letter-spacing: 0.01875rem;
