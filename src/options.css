@@ -35,8 +35,9 @@
 }
 
 .options-list li:hover::after{
-    animation: option-element-hover 0.15s;
-    animation-fill-mode: forwards;
+    animation: option-element-hover 0.15s forwards, option-element-blinking 1.3s infinite;
+    
+    
 }
 .options-list li.mouse-leave::after{
     animation: fade 0.3s;
@@ -70,10 +71,13 @@
 }
 
 @keyframes option-element-blinking{
-    from{
+    0%{
         opacity: 1;
     }
-    to{
+    10%{
+        opacity:1;
+    }
+    100%{
         opacity: 0.4;
     }
 }
