@@ -1,24 +1,24 @@
-.orders{
+.preparations{
     padding: 6.68rem 12rem 9.44rem 12rem;
     background-color: #000;
+    flex: 1;
 }
-.orders .container{
+.preparations .container{
     height: 100%;
     
 }
-.orders .orders-top {
+.preparations .preparations-top {
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    
+    gap: 1.5rem;
 }
 .orders-left-top{
     flex: 1;
 }
-.orders-left, .orders-right {
+.preparations-left, .preparations-right {
     width: 46.5rem;
 }
-.orders-left{
+.preparations-left{
     text-shadow: 0 0 1px #FFF;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     margin-top: 3.38rem;
 }
 
-.orders .orders-categories {
+.preparations .orders-categories {
     display: flex;
     color: #FFF;
     font-size: 0.6875rem;
@@ -49,7 +49,7 @@
 .category-4 {
     width: 15.05%;
 }
-.orders .orders-category {
+.preparations .orders-category {
     background-color: #476467;
     border-radius: 0rem 0.1875rem 0rem 0rem;
     padding: 0 0 0.06rem 0.19rem;
@@ -124,9 +124,52 @@
     margin-top: 0.34rem;
 }
 .order-element-active, .order-element:not(.order-element-empty):hover{
-    background-color: rgba(14, 126, 164, 0.8);
+    position: relative;
 }
-
+.order-element-active::after, .order-element:not(.order-element-empty):hover::after{
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 10rem;
+    min-height: 1.43rem;
+    width: 100%;
+    animation:wave 10s linear infinite ;
+    background-image: url('assets/wave.png'), url('assets/wave2.png');
+    background-position: left -75px center, left -75px center;
+    mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%)
+}
+.order-element-active::before, .order-element:not(.order-element-empty):hover::before{
+    content: "";
+    transform: scaleX(0) scaleY(0.05);
+    position: absolute;
+    animation: element-hover 0.15s forwards, element-blinking 1.3s infinite;
+    background-image:url('assets/options-parameter-bg.png');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+@keyframes orders-wave{
+    from{
+        background-position-x:-600px, -1400px;
+    }
+    to{
+        background-position-x: 300px, 700px;
+    }
+}
+@keyframes order-blinking{
+    0%{
+        background-color: rgba(14, 126, 164, 1);
+    }
+    10%{
+        background-color: rgba(14, 126, 164, 1);
+    }
+    100%{
+        background-color: rgba(14, 126, 164, 0.6);
+    }
+}
 .order-element *{
     margin-left: 0.25rem;
 }
@@ -147,10 +190,8 @@
     opacity: 0;
 }
 
-
-
-.orders-left-botoom{
-    height: 30%;
+.orders-left-bottom{
+    margin-top: 6.25rem;
 }
 .orders-conditions-list {
     margin-top: 0.12rem;

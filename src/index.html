@@ -16,7 +16,7 @@
 
 <body>
     <canvas id="wave" width="4000" height="35" style="position: fixed; top: 62.5%; display: none"></canvas>
-    <div class="screen screen-show main-menu">
+    <div class="screen main-menu">
         <div class="container">
             <ul class="main-menu-list">
                 <li>Continue</li>
@@ -84,106 +84,201 @@
             <img class="loading-star" src="./assets/loading-star.gif" alt="loading">
         </div>
     </div>
-    <div class="screen orders">
+    <div class="screen screen-show preparations">
         <div class="container">
             <h1><img src="assets/orders-title.png" alt=""></h1>
-            <div class="orders-top">
-                <div class="orders-left">
-                    <!-- Сделать ебанным Гридом -->
-                    <div class="orders-left-top">
-                        <div class="orders-categories">
-                            <div class="orders-category category-1">
-                                ORDERS
+            <div class="preparations-top">
+                <div class="preparations-left">
+                    <div class="preparations-orders screen screen-show">
+                        <div class="orders-left-top">
+                            <div class="orders-categories">
+                                <div class="orders-category category-1">
+                                    ORDERS
+                                </div>
+                                <div class="orders-category category-2">
+                                    NAME
+                                </div>
+                                <div class="orders-category category-3">
+                                    MAX. LIKES
+                                </div>
+                                <div class="orders-category category-4">
+                                    WEIGHT
+                                </div>
                             </div>
-                            <div class="orders-category category-2">
-                                NAME
-                            </div>
-                            <div class="orders-category category-3">
-                                MAX. LIKES
-                            </div>
-                            <div class="orders-category category-4">
-                                WEIGHT
+                            <div class="orders-available grid-available"><span>Available</span><span>x1</span></div>
+                            <ul class="orders-list">
+                                <li class="order-element order-element-active">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element">
+                                    <span class="order-number">5</span>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <span class="order-max-likes">≈3</span>
+                                    <span class="order-weight">28.0kg</span>
+                                </li>
+                                <li class="order-element">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element">
+                                    <div class="order-number">5</div>
+                                    <div class="order-name">Deliver a crowbar to Gordan</div>
+                                    <div class="order-max-likes">≈3</div>
+                                    <div class="order-weight">28.0kg</div>
+                                </li>
+                                <li class="order-element order-element-empty">
+                                    <div class="order-number"></div>
+                                    <div class="order-name"></div>
+                                    <div class="order-max-likes"></div>
+                                    <div class="order-weight"></div>
+                                </li>
+                                <li class="order-element order-element-empty">
+                                    <div class="order-number"></div>
+                                    <div class="order-name"></div>
+                                    <div class="order-max-likes"></div>
+                                    <div class="order-weight"></div>
+                                </li>
+                                <li class="order-element order-element-empty">
+                                    <div class="order-number"></div>
+                                    <div class="order-name"></div>
+                                    <div class="order-max-likes"></div>
+                                    <div class="order-weight"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="orders-left-bottom">
+                            <div class="orders-available"><span>Available</span></div>
+                            <ul class="orders-conditions-list">
+                                <li class="orders-condition">Cargo Condition: Less than 50% Damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="preparations-tools screen">
+                        <div class="tools-left-top">
+                            <h1 class="tools-title">Tools</h1>
+                            <div class="tools-items">
+                                <div class="tool tool-ladder">
+                                    <div class="tool-content">
+                                        <h2 class="tool-title">Ladder</h2>
+                                        <div class="tool-numbers">
+                                            <span class="tool-number1">20</span>
+                                            <span class="tool-number2"></span>
+                                            <span class="tool-number3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tool tool-anchor">
+                                    <div class="tool-content">
+                                        <h2 class="tool-title">Climbing Anchor (Lv 1)</h2>
+                                        <div class="tool-numbers">
+                                            <span class="tool-number1">20</span>
+                                            <span class="tool-number2"></span>
+                                            <span class="tool-number3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tool tool-repair-spray">
+                                    <div class="tool-content">
+                                        <h2 class="tool-title">Container Repair Spray</h2>
+                                        <div class="tool-numbers">
+                                            <span class="tool-number1">20</span>
+                                            <span class="tool-number2">5</span>
+                                            <span class="tool-number3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tool tool-blood-bag">
+                                    <div class="tool-content">
+                                        <h2 class="tool-title">Blood Bag</h2>
+                                        <div class="tool-numbers">
+                                            <span class="tool-number1">5</span>
+                                            <span class="tool-number2">5</span>
+                                            <span class="tool-number3"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="orders-available grid-available"><span>Available</span><span>x1</span></div>
-                        <!-- сделать wrapper и применить к нему position: relative позиционируя пмевдоэлемент orders-list с маркерами относительно wrapper -->
-                        <ul class="orders-list">
-                            <li class="order-element order-element-active">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element">
-                                <span class="order-number">5</span>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <span class="order-max-likes">≈3</span>
-                                <span class="order-weight">28.0kg</span>
-                            </li>
-                            <li class="order-element">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element">
-                                <div class="order-number">5</div>
-                                <div class="order-name">Deliver a crowbar to Gordan</div>
-                                <div class="order-max-likes">≈3</div>
-                                <div class="order-weight">28.0kg</div>
-                            </li>
-                            <li class="order-element order-element-empty">
-                                <div class="order-number"></div>
-                                <div class="order-name"></div>
-                                <div class="order-max-likes"></div>
-                                <div class="order-weight"></div>
-                            </li>
-                            <li class="order-element order-element-empty">
-                                <div class="order-number"></div>
-                                <div class="order-name"></div>
-                                <div class="order-max-likes"></div>
-                                <div class="order-weight"></div>
-                            </li>
-                            <li class="order-element order-element-empty">
-                                <div class="order-number"></div>
-                                <div class="order-name"></div>
-                                <div class="order-max-likes"></div>
-                                <div class="order-weight"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="orders-left-botoom">
-                        <div class="orders-available"><span>Available</span></div>
-                        <ul class="orders-conditions-list">
-                            <li class="orders-condition">Cargo Condition: Less than 50% Damage</li>
-                        </ul>
+                        <div class="tools-left-bottom">
+                            <div class="tools-requirements">
+                                <div class="requirements-text">Required</div>
+                                <div class="requirements-text">Available</div>
+                            </div>
+                            <div class="tools-resourse">
+                                <h3 class="resourse-title">Chiral Crystals</h3>
+                                <div class="resourse-numbers">
+                                    <div class="resourse-required">0</div>
+                                    <div class="resourse-available">18</div>
+                                </div>
+                            </div>
+                            <div class="tools-resourse">
+                                <h3 class="resourse-title">Circle</h3>
+                                <div class="resourse-numbers">
+                                    <div class="resourse-required">0</div>
+                                    <div class="resourse-available">18</div>
+                                </div>
+                            </div>
+                            <div class="tools-resourse">
+                                <h3 class="resourse-title">Metals</h3>
+                                <div class="resourse-numbers">
+                                    <div class="resourse-required">0</div>
+                                    <div class="resourse-available">18</div>
+                                </div>
+                            </div>
+                            <div class="tools-resourse">
+                                <h3 class="resourse-title">Ceramics</h3>
+                                <div class="resourse-numbers">
+                                    <div class="resourse-required">0</div>
+                                    <div class="resourse-available">18</div>
+                                </div>
+                            </div>
+                            <div class="tools-resourse">
+                                <h3 class="resourse-title">Chemicals</h3>
+                                <div class="resourse-numbers">
+                                    <div class="resourse-required">0</div>
+                                    <div class="resourse-available">18</div>
+                                </div>
+                            </div>
+                            <div class="tools-resourse">
+                                <h3 class="resourse-title">Special Alloys</h3>
+                                <div class="resourse-numbers">
+                                    <div class="resourse-required">0</div>
+                                    <div class="resourse-available">18</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="orders-right">
+                <div class="preparations-right">
                     <div class="map">
                         <div class="map-row">
                             <div class="aim map-block"><img src="assets/aim.png" alt=""></div>
@@ -631,7 +726,7 @@
                     </div>
                 </div>
             </div>
-            <div class="orders-bottom player-stats">
+            <div class="preparations-bottom player-stats">
                 <div class="col-1 col">
                     <!-- Обернуть иконки(иконки на фоне дива) дивами -->
                     <div class="health-bar bar">
@@ -1284,8 +1379,9 @@
     </div>
     </div>
     <div class="screen game">
-        <h1>Game</h1>
-
+        <div class="game-header"></div>
+        <div class="game-main"></div>
+        <div class="game-footer"></div>
     </div>
     <div class="screen result">
         <h1>Result</h1>

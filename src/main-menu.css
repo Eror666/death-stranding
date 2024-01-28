@@ -1,8 +1,12 @@
-.main-menu .container{
-    height: 100vh;
+.main-menu{
     background-image: url('assets/main-menu-bg.png');
     background-size: cover;
     background-position: center center;
+}
+
+.main-menu .container{
+    height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -25,7 +29,14 @@
     mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to left, transparent 0%, white 20%, white 80%, transparent 100%);
 }
-
+@keyframes wave{
+    from{
+        background-position-x: 2000px, 2500px;
+    }
+    to{
+        background-position-x: -750px, -900px;
+    }
+}
 
 .main-menu-list li:hover{
     color: rgba(255, 255, 255, 0.87); 
@@ -34,12 +45,4 @@
     animation: wave 50s infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-}
-@keyframes wave{
-    from{
-        background-position-x: -2000px, -2500px;
-    }
-    to{
-        background-position-x: -75px, -190px;
-    }
 }

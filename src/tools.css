@@ -34,9 +34,22 @@
 }
 .tool:hover{
     background-color: rgba(0, 62, 90, 1);
+    
 }
 .tool:hover .tool-content{
+    animation: tool-blinking 1.3s infinite; 
     background-color: #009EE3;
+}
+@keyframes tool-blinking{
+    0%{
+        background-color: rgba(0, 158, 227, 1);
+    }
+    10%{
+        background-color: rgba(0, 158, 227, 1);
+    }
+    100%{
+        background-color: rgba(0, 158, 227, 0.6);
+    }
 }
 .tool:not(:last-child){
     margin-right: 2.19rem;
@@ -70,6 +83,7 @@
     border-top: 2px solid #182A31;
     padding-top: 2px;
     position: relative;
+    margin-top: 8.5rem;
 }
 .tools-left-bottom::after{
     content: '';
@@ -81,6 +95,7 @@
     height: 0.125rem;
     background-color: #182A31;
 }
+
 .tools-left-bottom::before{
     content: '';
     display: block;
