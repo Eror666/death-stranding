@@ -1,36 +1,8 @@
-.preparations{
-    padding: 6.68rem 12rem 9.44rem 12rem;
-    background-color: #000;
-    flex: 1;
-}
-.preparations .container{
-    height: 100%;
-    
-}
-.preparations .preparations-top {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
+
 .orders-left-top{
     flex: 1;
 }
-.preparations-left, .preparations-right {
-    width: 46.5rem;
-}
-.preparations-left{
-    text-shadow: 0 0 1px #FFF;
-    display: flex;
-    flex-direction: column;
-    font-weight: 300;
-}
-.orders-bottom, .player-stats {
-    display: flex;
-    gap: 1rem;
-    margin-top: 3.38rem;
-}
-
-.preparations .orders-categories {
+.orders-categories {
     display: flex;
     color: #FFF;
     font-size: 0.6875rem;
@@ -49,7 +21,7 @@
 .category-4 {
     width: 15.05%;
 }
-.preparations .orders-category {
+.orders-category {
     background-color: #476467;
     border-radius: 0rem 0.1875rem 0rem 0rem;
     padding: 0 0 0.06rem 0.19rem;
@@ -174,21 +146,6 @@
     margin-left: 0.25rem;
 }
 
-.player-stats .icon {
-    background-color: #D9D9D9;
-    max-width: 1.93rem;
-    max-height: 1.93rem;
-    padding: 0.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.player-stats .icon  img{
-    width: 100%;
-}
-.player-stats .icon-transparent{
-    opacity: 0;
-}
 
 .orders-left-bottom{
     margin-top: 6.25rem;
@@ -205,95 +162,4 @@
     font-size: 1.06rem;
     width: 22.68rem;
     font-weight: 300;
-}
-.player-stats .bar, .player-stats .number{
-    display: flex;
-    align-items: center;
-}
-
-
-.player-stats .col .bar:last-child, .player-stats .col .number:last-child{
-    margin-top: 0.56rem;
-}
-.player-stats .bar .amount{
-    height: 1.93rem;
-    width: 11.93rem;
-    margin-left: 0.31rem;
-}
-.player-stats .health-bar .amount{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: #E1173B;
-    font-family: 'Tektur', sans-serif;
-    text-align: right;
-    letter-spacing: 0.12rem;
-    padding-right: 0.31rem;
-}
-.player-stats .stamina-bar .amount{
-    background-color: #016DB5;
-}
-.player-stats .bb-bar .amount{
-    background-color: #E36F31;
-}
-.player-stats .shoes-bar .amount{
-    background-color: #07A5BA;
-}
-.player-stats .number{
-    font-size: 2.31rem;
-    letter-spacing: 0.046rem;
-}
-.player-stats.number .zeros{
-    color: #33485D;
-    text-shadow: 0px 0px 5px #33485D;
-}
-.player-stats .number .amount{
-    color: #8CA8BE;
-    line-height: 0.8;
-    margin-left: 0.31rem;
-}
-.player-stats .number .kg{
-    color: #8CA8BE;
-    font-size: 0.9375rem;
-    letter-spacing: 0.01875rem;
-}
-
-.map{
-    position: relative;
-}
-
-.map-block {
-    flex: 1;
-    aspect-ratio: 1/1;
-}
-.map-row{
-    width: 100%;
-    display: flex;
-} 
-
-.map .plain {
-    background-color: #252D16;
-}
-
-.map .hills {
-    background-color: #202714;
-}
-.map .water {
-    background-color: #1D2932;
-}
-.map .insurmountable {
-    background-color: #171918;
-}
-.map .mountain {
-    background-color: #484A4A;
-}
-.map .things {
-    background-color: #2F0D0D;
-}
-.map .aim{
-    position: absolute;
-    right: 0;
-}
-.map .player{
-    position: absolute;
 }

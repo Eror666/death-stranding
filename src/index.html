@@ -86,10 +86,10 @@
     </div>
     <div class="screen screen-show preparations">
         <div class="container">
-            <h1><img src="assets/orders-title.png" alt=""></h1>
-            <div class="preparations-top">
+            <div class="preparations-top preparations-top_game">
                 <div class="preparations-left">
-                    <div class="preparations-orders screen screen-show">
+                    <div class="preparations-orders screen">
+                        <h1><img src="assets/orders-title.png" alt=""></h1>
                         <div class="orders-left-top">
                             <div class="orders-categories">
                                 <div class="orders-category category-1">
@@ -275,6 +275,21 @@
                                     <div class="resourse-available">18</div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <div class="step-indicator">
+                            <div class="markers markers-top"></div>
+                            <div class="progress-bar"></div>
+                            <div class="markers markers-bottom"></div>
+                        </div>
+                        <div class="game-equipment">
+                            <div class="game-equipment-item"><img src="/src/assets/Apple-logo.png" alt=""></div>
+                            <div class="game-equipment-item"><img src="/src/assets/Apple-logo.png" alt=""></div>
+                            <div class="game-equipment-item"><img src="/src/assets/Apple-logo.png" alt=""></div>
+                            <div class="game-equipment-item"><img src="/src/assets/Apple-logo.png" alt=""></div>
+                            <div class="game-equipment-item"><img src="/src/assets/Apple-logo.png" alt=""></div>
+                            <div class="game-equipment-item"><img src="/src/assets/Apple-logo.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -726,662 +741,62 @@
                     </div>
                 </div>
             </div>
-            <div class="preparations-bottom player-stats">
-                <div class="col-1 col">
-                    <!-- Обернуть иконки(иконки на фоне дива) дивами -->
-                    <div class="health-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png"></div>
-                        <div class="amount">1000/1000ml</div>
-                    </div>
-                    <div class="stamina-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png"></div>
-                        <div class="amount"></div>
-                    </div>
-                </div>
-                <div class="col-2 col">
-                    <div class="bb-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount"></div>
-                    </div>
-                    <div class="shoes-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount"></div>
-                    </div>
-                </div>
-                <div class="col-3 col">
-                    <div class="number">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            <span class="zeros">00</span>0.8<span class="kg">kg</span>
+            <div class="preparations-bottom player-stats player-stats_game">
+                <div class="player-stats-left">
+                    <div class="col-1 col">
+                        <div class="health-bar bar">
+                            <div class="icon"><img src="assets/Apple-logo.png"></div>
+                            <div class="amount">1000/1000ml</div>
+                        </div>
+                        <div class="stamina-bar bar">
+                            <div class="icon"><img src="assets/Apple-logo.png"></div>
+                            <div class="amount"></div>
                         </div>
                     </div>
-                    <div class="number">
-                        <div class="icon icon-transparent"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            0.8<span class="kg">kg</span>
+                    <div class="col-2 col">
+                        <div class="bb-bar bar">
+                            <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
+                            <div class="amount"></div>
+                        </div>
+                        <div class="shoes-bar bar">
+                            <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
+                            <div class="amount"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 col">
-                    <div class="number">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            0.8<span class="kg">kg</span>
+                <div class="player-stats-right">
+                    <div class="col-3 col">
+                        <div class="number">
+                            <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
+                            <div class="amount">
+                                <span class="zeros">00</span>0.8<span class="kg">kg</span>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <div class="icon icon-transparent"><img src="assets/Apple-logo.png" alt="image"></div>
+                            <div class="amount">
+                                0.8<span class="kg">kg</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="number">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            0.8<span class="kg">kg</span>
+                    <div class="col-4 col">
+                        <div class="number">
+                            <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
+                            <div class="amount">
+                                0.8
+                            </div>
+                        </div>
+                        <div class="number">
+                            <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
+                            <div class="amount">
+                                0.8
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="screen tools">
-        <div class="container">
-            <div class="tools-main">
-                <div class="tools-left">
-                    <div class="tools-left-top">
-                        <h1 class="tools-title">Tools</h1>
-                        <div class="tools-items">
-                            <div class="tool tool-ladder">
-                                <div class="tool-content">
-                                    <h2 class="tool-title">Ladder</h2>
-                                    <div class="tool-numbers">
-                                        <span class="tool-number1">20</span>
-                                        <span class="tool-number2"></span>
-                                        <span class="tool-number3"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tool tool-anchor">
-                                <div class="tool-content">
-                                    <h2 class="tool-title">Climbing Anchor (Lv 1)</h2>
-                                    <div class="tool-numbers">
-                                        <span class="tool-number1">20</span>
-                                        <span class="tool-number2"></span>
-                                        <span class="tool-number3"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tool tool-repair-spray">
-                                <div class="tool-content">
-                                    <h2 class="tool-title">Container Repair Spray</h2>
-                                    <div class="tool-numbers">
-                                        <span class="tool-number1">20</span>
-                                        <span class="tool-number2">5</span>
-                                        <span class="tool-number3"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tool tool-blood-bag">
-                                <div class="tool-content">
-                                    <h2 class="tool-title">Blood Bag</h2>
-                                    <div class="tool-numbers">
-                                        <span class="tool-number1">5</span>
-                                        <span class="tool-number2">5</span>
-                                        <span class="tool-number3"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tools-left-bottom">
-                        <div class="tools-requirements">
-                            <div class="requirements-text">Required</div>
-                            <div class="requirements-text">Available</div>
-                        </div>
-                        <div class="tools-resourse">
-                            <h3 class="resourse-title">Chiral Crystals</h3>
-                            <div class="resourse-numbers">
-                                <div class="resourse-required">0</div>
-                                <div class="resourse-available">18</div>
-                            </div>
-                        </div>
-                        <div class="tools-resourse">
-                            <h3 class="resourse-title">Circle</h3>
-                            <div class="resourse-numbers">
-                                <div class="resourse-required">0</div>
-                                <div class="resourse-available">18</div>
-                            </div>
-                        </div>
-                        <div class="tools-resourse">
-                            <h3 class="resourse-title">Metals</h3>
-                            <div class="resourse-numbers">
-                                <div class="resourse-required">0</div>
-                                <div class="resourse-available">18</div>
-                            </div>
-                        </div>
-                        <div class="tools-resourse">
-                            <h3 class="resourse-title">Ceramics</h3>
-                            <div class="resourse-numbers">
-                                <div class="resourse-required">0</div>
-                                <div class="resourse-available">18</div>
-                            </div>
-                        </div>
-                        <div class="tools-resourse">
-                            <h3 class="resourse-title">Chemicals</h3>
-                            <div class="resourse-numbers">
-                                <div class="resourse-required">0</div>
-                                <div class="resourse-available">18</div>
-                            </div>
-                        </div>
-                        <div class="tools-resourse">
-                            <h3 class="resourse-title">Special Alloys</h3>
-                            <div class="resourse-numbers">
-                                <div class="resourse-required">0</div>
-                                <div class="resourse-available">18</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tools-right">
-                    <div class="map">
-                        <div class="map-row">
-                            <div class="aim map-block"><img src="assets/aim.png" alt=""></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="player map-block"><img src="assets/player.png" alt=""></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                        <div class="map-row">
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                            <div class="mountain map-block"></div>
-                            <div class="things map-block"></div>
-                            <div class="plain map-block"></div>
-                            <div class="hills map-block"></div>
-                            <div class="water map-block"></div>
-                            <div class="insurmountable map-block"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tools-footer player-stats">
-                <div class="col-1 col">
-                    <!-- Обернуть иконки(иконки на фоне дива) дивами -->
-                    <div class="health-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png"></div>
-                        <div class="amount">1000/1000ml</div>
-                    </div>
-                    <div class="stamina-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png"></div>
-                        <div class="amount"></div>
-                    </div>
-                </div>
-                <div class="col-2 col">
-                    <div class="bb-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount"></div>
-                    </div>
-                    <div class="shoes-bar bar">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount"></div>
-                    </div>
-                </div>
-                <div class="col-3 col">
-                    <div class="number">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            <span class="zeros">00</span>0.8<span class="kg">kg</span>
-                        </div>
-                    </div>
-                    <div class="number">
-                        <div class="icon icon-transparent"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            0.8<span class="kg">kg</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col">
-                    <div class="number">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            0.8<span class="kg">kg</span>
-                        </div>
-                    </div>
-                    <div class="number">
-                        <div class="icon"><img src="assets/Apple-logo.png" alt="image"></div>
-                        <div class="amount">
-                            0.8<span class="kg">kg</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="screen game">
-        <div class="game-header"></div>
-        <div class="game-main"></div>
-        <div class="game-footer"></div>
     </div>
     <div class="screen result">
         <h1>Result</h1>

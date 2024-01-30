@@ -8,14 +8,6 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-@keyframes wave{
-    from{
-        background-position-x:-6000px, -14000px;
-    }
-    to{
-        background-position-x: -3000px, -7000px;
-    }
-}
 .screen {
     height: 100vh;
     display: none;

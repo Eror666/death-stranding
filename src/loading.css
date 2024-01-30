@@ -1,4 +1,4 @@
-.loading{
+.loading, .preparations{
     height: 100vh;
     background-color: #000;
     position: relative;
@@ -29,26 +29,27 @@
     background-color: #99BFC2;
 }
 
-.loading .markers{
+.preparations .markers, .loading .markers{
     position: absolute;
     left: 0;
     right: 0;
-    height: 0.312rem;
+
 }
 
-.loading .markers::before, .markers::after{
+.preparations .markers::before, .preparations .markers::after, .loading .markers::before, .loading .markers::after{
     content: '';
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 0.625rem;
+    height: 0.312rem;
     background-color: #CAFCFD;
 }
-.loading .markers::after{
+.loading .markers::after, .preparations .markers::after{
     right: 0;
 }
-.loading .markers::before{
+.preparations .markers::before, .loading .markers::before{
     left: 0;
 }
 .loading .inner-container{
@@ -57,6 +58,7 @@
     width: 40.375rem;
     z-index: 10;
 }
+
 .loading .inner-container::before{
     content: "";
     position: absolute;
@@ -79,10 +81,10 @@
         background-position-x: -20px, -25px, -10px, -40px;
     }
 }
-.loading .markers-top {
+.preparations .markers-top, .loading .markers-top {
     top: 0;
 }
-.loading .markers-bottom{
+.preparations .markers-bottom, .loading .markers-bottom{
     bottom: 0;
 }
 .loading .loading-star{

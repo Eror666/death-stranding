@@ -3,8 +3,11 @@ import './main-menu.css'
 import './options.css'
 import './loading.css'
 import './orders.css'
-import './options'
+import './preparations.css'
 import './tools.css'
+import './game.css'
+import './orders'
+import './options'
 // const canvas = document.querySelector('#wave')
 // const ctx = canvas.getContext("2d")
 // const clamp = function (number, min, max) {

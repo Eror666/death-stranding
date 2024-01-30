@@ -1,0 +1,52 @@
+.game-header, .game-main{
+    max-width: 46.87rem;
+}
+.game{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.game .progress-bar {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 0.125rem;
+    background-color: #99BFC2;
+}
+.game .markers{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0.125rem;
+}
+.game .markers::before, .preparations .markers::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.187rem;
+    background-color: #CAFCFD;
+}
+.game-equipment{
+    display: flex;
+}
+.game-equipment-item{
+    background-color: #003E5A;
+    max-width: 2rem;
+    margin-left: 0.37rem;
+}
+.game-equipment-item:first-child{
+    margin-left: 0;
+}
+.game-equipment-item img{
+    width: 100%;
+    
+}
+.game .step-indicator{
+    position: relative;
+    padding: 0.31rem 0.31rem;
+    width: 8.18rem;
+    height: 1rem;
+    z-index: 10;
+}
