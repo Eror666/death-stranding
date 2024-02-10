@@ -1,5 +1,4 @@
 .loading, .preparations{
-    height: 100vh;
     background-color: #000;
     position: relative;
 }
@@ -23,20 +22,20 @@
     letter-spacing: 2px;
     color: #C4F0EF;
 }
-.progress-bar {
+.loading .progress-bar {
     width: 40%;
     height: 0.5rem;
     background-color: #99BFC2;
 }
 
-.preparations .markers, .loading .markers{
+.game .markers, .loading .markers{
     position: absolute;
     left: 0;
     right: 0;
 
 }
 
-.preparations .markers::before, .preparations .markers::after, .loading .markers::before, .loading .markers::after{
+.game .markers::before, .game .markers::after, .loading .markers::before, .loading .markers::after{
     content: '';
     display: block;
     position: absolute;
@@ -46,10 +45,10 @@
     height: 0.312rem;
     background-color: #CAFCFD;
 }
-.loading .markers::after, .preparations .markers::after{
+.loading .markers::after, .game .markers::after{
     right: 0;
 }
-.preparations .markers::before, .loading .markers::before{
+.game .markers::before, .loading .markers::before{
     left: 0;
 }
 .loading .inner-container{
@@ -81,10 +80,10 @@
         background-position-x: -20px, -25px, -10px, -40px;
     }
 }
-.preparations .markers-top, .loading .markers-top {
+.game .markers-top, .loading .markers-top {
     top: 0;
 }
-.preparations .markers-bottom, .loading .markers-bottom{
+.game .markers-bottom, .loading .markers-bottom{
     bottom: 0;
 }
 .loading .loading-star{

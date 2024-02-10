@@ -26,3 +26,11 @@ button{
     max-width: 95.93rem;
     margin: 0 auto;
 }
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

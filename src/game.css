@@ -2,14 +2,41 @@
     max-width: 46.87rem;
 }
 .game{
+    background-color: #000;
+    padding-top: 7.81rem;
+}
+.game .container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
+.game-top{
+    width: 46.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loading .progress-bar {
+    width: 40%;
+    height: 0.5rem;
+    background-color: #99BFC2;
+}
+.game-main{
+    margin-top: 0.5rem;
+    width: 46.5rem;
+}
+.player-stats-game {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.38rem;
+}
+
 .game .progress-bar {
     position: absolute;
     top: 50%;
-    width: 40%;
+    width: 40%; 
+    max-width: 7.56rem;
     height: 0.125rem;
     background-color: #99BFC2;
 }
@@ -19,12 +46,13 @@
     right: 0;
     height: 0.125rem;
 }
-.game .markers::before, .preparations .markers::after{
+.game .markers::before, .game .markers::after{
     content: '';
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
+    height: 0.125rem;
     width: 0.187rem;
     background-color: #CAFCFD;
 }
@@ -45,7 +73,7 @@
 }
 .game .step-indicator{
     position: relative;
-    padding: 0.31rem 0.31rem;
+    padding: 0.43rem 0.31rem;
     width: 8.18rem;
     height: 1rem;
     z-index: 10;

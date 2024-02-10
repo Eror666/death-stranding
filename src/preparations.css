@@ -26,17 +26,6 @@
     gap: 1rem;
     margin-top: 3.38rem;
 }
-.player-stats_game {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3.38rem;
-}
-
-.preparations-top_game{
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
 
 .player-stats-left, .player-stats-right{
     display: flex;

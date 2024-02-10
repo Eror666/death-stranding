@@ -1,6 +1,9 @@
 .tools {
     background-color: #000;
     padding-top: 8.25rem;
+    --tools-top-time: 0.1s;
+    --tools-bottom-time:0.13s;
+    --tools-bottom-delay: var(--tools-top-time);
 }
 /* check how does container max-width works */
 .tools-main {
@@ -25,12 +28,16 @@
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: -0.0125rem;
+    animation: appear var(--tools-top-time);
+    animation-fill-mode: forwards;
 }
 .tool {
     width: 11.875rem;
     height: 10.75rem;
     position: relative;
     margin-top: 1.25rem;
+    animation: appear var(--tools-top-time);
+    animation-fill-mode: forwards;
 }
 .tool:hover{
     background-color: rgba(0, 62, 90, 1);
@@ -108,6 +115,9 @@
 }
 .tools-requirements {
     margin: auto 0 0 0;
+    animation: appear var(--tools-bottom-time);
+    animation-delay: var(--tools-bottom-delay);
+    animation-fill-mode: forwards;
 }
 .requirements-text{
     font-size: 0.93rem;
@@ -119,6 +129,9 @@
 }
 .tools-resourse {
     width: 5.875rem;
+    animation: appear var(--tools-bottom-time);
+    animation-delay: var(--tools-bottom-delay);
+    animation-fill-mode: forwards;
 }
 .tools-resourse:hover{
     outline: 2px solid #5F6E6E;
